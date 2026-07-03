@@ -1,4 +1,4 @@
-import { Award, HeartPulse, Stethoscope } from 'lucide-react';
+import { HeartPulse, Stethoscope } from 'lucide-react';
 import './About.css';
 
 const About = () => {
