@@ -12,16 +12,16 @@ const About = () => {
 
         <div className="grid-2 align-center">
           <div className="about-image-wrapper">
-             <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Veterinary Clinic" className="about-img" />
+            <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Veterinary Clinic" className="about-img" />
           </div>
           <div className="about-content">
-            <h3>Meet Dr. S.P. Singh</h3>
+            <h3>Meet Dr. Singh</h3>
             <p className="credentials">B.V.Sc & AH M.V. Sc (Vet. Physician & Surgeon)</p>
             <p className="about-text">
-              With years of experience and a deep love for animals, Dr. S.P. Singh leads the team at Dr. Pet Well. 
+              With years of experience and a deep love for animals, Dr. Singh leads the team at Dr. Pet Well.
               Our hospital is equipped with modern facilities to diagnose and treat a wide range of animal health issues.
             </p>
-            
+
             <div className="features-list">
               <div className="feature-item">
                 <div className="feature-icon"><Stethoscope size={24} /></div>
@@ -37,13 +37,13 @@ const About = () => {
                   <p>We are available 24/7 for any pet emergencies.</p>
                 </div>
               </div>
-              <div className="feature-item">
+              {/* <div className="feature-item">
                 <div className="feature-icon"><Award size={24} /></div>
                 <div>
                   <h4>Government Registered</h4>
                   <p>Regd. UPVC6789 ensuring certified and standard care.</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

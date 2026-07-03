@@ -4,18 +4,26 @@ import './Locations.css';
 const branches = [
   {
     name: 'Main Branch (Prayagraj)',
-    address: 'IIIT Road, Beside Gramin Bank (UP Bank of Baroda) Jhalwa, Pipal Gaon, Prayagraj',
-    timings: '10:00 am to 1:00 pm, 05:00 pm to 8:00 pm',
-    sundayTiming: '10:00 am to 01:00 pm',
+    address: 'IIIT Road, Beside Gramin Bank (UP Bank of Baroda) Jhalwa, Pipal Gaon, Prayagraj, Uttar Pradesh',
+    timings: '09:00 am to 09:00 pm',
+    emergency: '09:00 pm to 09:00 am',
     isMain: true
   },
   {
-    name: 'City Center Branch',
-    address: 'Civil Lines, Near Medical College, Prayagraj',
-    timings: '09:00 am to 2:00 pm, 04:00 pm to 9:00 pm',
-    sundayTiming: 'Closed',
+    name: 'Civil Lines Branch',
+    address: '87, 37/2D, GP Complex, Lal Bahadur Shastri Marg, Near GHS School, Civil Lines, Prayagraj, Uttar Pradesh',
+    timings: '09:00 am to 09:00 pm',
+    emergency: '09:00 pm to 09:00 am',
+    isMain: false
+  },
+  {
+    name: 'Happy Home Branch',
+    address: 'Pongahat pull, Vishnapuri Colony, Ghayasuddinpur, Prayagraj, Uttar Pradesh',
+    timings: '09:00 am to 09:00 pm',
+    emergency: '09:00 pm to 09:00 am',
     isMain: false
   }
+
 ];
 
 const Locations = () => {
@@ -32,7 +40,7 @@ const Locations = () => {
             <div key={index} className={`location-card ${branch.isMain ? 'main-branch' : ''}`}>
               {branch.isMain && <div className="branch-badge">Head Office</div>}
               <h3 className="branch-name">{branch.name}</h3>
-              
+
               <div className="branch-details">
                 <div className="detail-item">
                   <MapPin className="detail-icon" size={20} />
@@ -41,12 +49,12 @@ const Locations = () => {
                 <div className="detail-item">
                   <Clock className="detail-icon" size={20} />
                   <div>
-                    <p><strong>Mon - Sat:</strong> {branch.timings}</p>
-                    <p><strong>Sunday:</strong> {branch.sundayTiming}</p>
+                    <p><strong>Timings:</strong> {branch.timings}</p>
+                    <p><strong>Emergency:</strong> {branch.emergency}</p>
                   </div>
                 </div>
               </div>
-              
+
               <button className="btn btn-primary mt-4">Get Directions</button>
             </div>
           ))}

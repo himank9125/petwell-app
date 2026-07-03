@@ -1,4 +1,4 @@
-import { Syringe, Stethoscope, Scissors, ShoppingBag, Pill, Bone } from 'lucide-react';
+import { Syringe, Stethoscope, Scissors, ShoppingBag, Pill, Bone, Activity, Microscope, Home, Bath, BedDouble } from 'lucide-react';
 import './Services.css';
 
 const services = [
@@ -15,7 +15,7 @@ const services = [
   {
     icon: <Scissors size={32} />,
     title: 'Surgery',
-    description: 'Safe and professional surgical procedures by Dr. S.P. Singh.'
+    description: 'Safe and professional surgical procedures by Dr. Singh.'
   },
   {
     icon: <ShoppingBag size={32} />,
@@ -31,6 +31,31 @@ const services = [
     icon: <Bone size={32} />,
     title: 'Diet & Nutrition',
     description: 'Expert advice on pet diets to keep them active and fit.'
+  },
+  {
+    icon: <Activity size={32} />,
+    title: 'Treatment',
+    description: 'Advanced medical treatments tailored to your pet\'s specific needs.'
+  },
+  {
+    icon: <Microscope size={32} />,
+    title: 'Diagnostic',
+    description: 'State-of-the-art diagnostic services for accurate health assessments.'
+  },
+  {
+    icon: <Home size={32} />,
+    title: 'Home Visit',
+    description: 'Convenient home visits for pets who are unable to travel.'
+  },
+  {
+    icon: <Bath size={32} />,
+    title: 'Grooming',
+    description: 'Professional grooming services to keep your pets clean and comfortable.'
+  },
+  {
+    icon: <BedDouble size={32} />,
+    title: 'Boarding',
+    description: 'Safe and comfortable boarding facilities for when you are away.'
   }
 ];
 
